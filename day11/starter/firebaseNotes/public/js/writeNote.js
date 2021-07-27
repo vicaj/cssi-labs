@@ -19,7 +19,7 @@ const submitNote = () => {
     const note = document.querySelector("#noteText").value
     const title = document.querySelector("#noteTitle").value;
     const labels = document.querySelector("#labels").value;
-    let labelArray = labels.split(",")
+    //let labelArray = labels.split(",")
     const today = new Date();
     const time = `${today.getHours()}:${today.getMinutes()}`
 
@@ -28,7 +28,7 @@ const submitNote = () => {
             title: title,
             note: note,
             time: time,
-            labels: labelArray
+            //labels: labels
         }
     )
     .then(() => {
